@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Poto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="opening-screen">
+    <img src="assets/key-icon.png" id="key-icon" />
+    <button id="start-button">Click to start Poto</button>
+  </div>
+
+  <div id="main-content" style="display:none;">
+    <video id="bg-video" autoplay loop muted playsinline>
+      <source src="assets/Video1.mp4" type="video/mp4" />
+    </video>
+    <audio id="bg-music" src="assets/music1.mp3" loop></audio>
+
+    <div id="balloon-section"></div>
+    <div id="instruction">Click to pop the balloon</div>
+
+    <div id="candle-instruction" style="display: none;">Click to blow out the candle</div>
+    <div id="candle-section" style="display:none;">
+      <div class="candle-container">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video2-section" style="display:none;">
+      <video id="video2" autoplay muted playsinline>
+        <source src="assets/Video2.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div id="gift-box-section">
+      <div class="gift-box" onclick="showMessage()">🎁</div>
+      <div id="gift-instruction">Open the box</div>
+      <div id="gift-message">শুভ জন্মদিন প্রতীতি(Poto number 2)।আনন্দে, ভালোবাসায় ও শান্তিতে কাটুক তোমার এই বিশেষ দিনটা! তোমার হাসি যেন চিরকাল অমলিন থাকে!
+আর হ্যাঁ গিফট পেতে হলে আমার সাথে দেখা করতে হবে😏।</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
